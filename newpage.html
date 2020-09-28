@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <title>Forms-Page</title>
+      <link rel="stylesheet" href="css/newpagecss.css" type="text/css">
+      <script type="text/javascript" src="js/jquery.js"></script>
+    
+    </head>
+    <body>
+
+
+<script>
+$(function(){
+  $("#topnav").load("top_login.php");
+});
+</script>
+      
+      
+       <div id="topnav"></div>
+        <div class="wrapper">
+                      
+            <div class="sidebar">
+                <ul>
+                    <li><a href="#"><img src="images/iconnewpage/cert.png">Templates</a></li>
+                    <li><a href="#page2"><img src="images/iconnewpage/user.png">Personal Info</a></li>
+                    <li><a href="#page3"><img src="images/iconnewpage/contact.png">Conatct</a></li>
+                    <li><a href="#page4"><img src="images/iconnewpage/deg.png">Education</a></li>
+                    <li><a href="#page5"><img src="images/iconnewpage/exp.png">Experience</a></li>
+                    <li><a href="#page6"><img src="images/iconnewpage/skill.png">Skills</a></li>
+                    <li><a href="#page7"><img src="images/iconnewpage/certi.png">Certificate</a></li>
+                    <li><a href="#page8"><img src="images/iconnewpage/inte.png">Interest</a></li>
+                </ul>
+            </div>
+            
+            
+                               
+                       <div class="main_content">
+                              <form enctype="multipart/form-data" class="form" action="newpageconn.php" method="POST">
+                                   <div class="temp8 test">
+                                    
+                                    <h1 class="heading">Personal-Information</h1>
+                        
+                                     
+                                      <input type="text" name="email" placeholder="Enter Email id">
+                                      <input type="text" name="user_name" placeholder="Enter your full name">
+                                      <input type="text" name="linkedin" placeholder="linkedin username">
+                                      <input type="number"  name="contact_no" placeholder="Contact Number"  >
+                                      <input type="text" name="user_dob" placeholder="Enter you DOB" onfocus="(this.type='date')" >
+                                      <input type="text" name="job_profile" placeholder=" Job Profile">
+                                      <input type="text" name="user_address" placeholder="Address">
+                                      <label>upload your photo</label><input type="file" name="user_photo">
+                                                              
+                                    
+                                     </div>  
+                
+                        <div class="temp2 test">
+                                    
+                                        <h1 class="heading">Profile</h1>
+                        
+                                            <textarea name="about" placeholder="Tell us about yourself...." style="height: 150px"></textarea>
+                                            
+                                            
+                                        
+                                    
+                        </div>    
+                        
+                        <div class="temp3 test">
+                                    
+                                        <h1 class="heading">Education</h1>
+                                       
+                                           <input type="text" name="program" placeholder="Study Program">
+                                           <input type="text" name="uni_board"     placeholder="University Board">
+                                           <input type="text" name="uniproject1" placeholder="Project 1"> 
+                                           <input type="text" name="uniproject2" placeholder="Project 2"> 
+                                           <input type="number" name="percentage" placeholder="Percentage">                                           
+                                           <input type="text" name="start_year" placeholder="starting Year">
+                                            <input type="text" name="pass_year" placeholder="passing Year">
+                                             
+                                     
+                        </div>  
+                               
+                        <div class="temp6 test">
+                              
+                                    <h1 class="heading ">Certificates</h1>
+                                    
+                                    <input type="text" name="cert_name" placeholder="Certificate Name">
+                                            
+                                    <input type="text" name="insname"  placeholder="Institute Name">
+                                    <input type="text" name="issue_date" placeholder="Achieved on" onfocus="(this.type='date')">  
+                                    
+                                
+<!--
+                                    <input type="text" name="certificate2" placeholder="Certificate Name">
+                                    <input type="text" name="on2"      placeholder="From" onfocus="(this.type='date')">
+                                    <input type="text" name="insname2"  placeholder="Institute Name">         
+-->
+                                  
+                                </div>         
+                    
+                      
+                             
+                                <div class="temp5 test">
+                               
+                                    <h1 class="heading">Technical Skills</h1>
+                                     
+                                     <input type="text" name="tskill1" placeholder="enter technologies known" required>
+                                     <input type="number" name="rate1" placeholder="rate out of 10" required>
+                                     <input type="text" name="tskill2" placeholder="atleast 3" required>
+                                     <input type="number" name="rate2" placeholder="rate out of 10" required>
+                                     <input type="text" name="tskill3" placeholder="ex. php" required>
+                                     <input type="number" name="rate3" placeholder="rate out of 10" required>
+                                     <input type="text" name="tskill4" placeholder="ex. HTML" required>
+                                     <input type="number" name="rate4" placeholder="rate out of 10" required>
+                                     <input type="text" name="tskill5" placeholder="ex. Java" required>
+                                     <input type="number" name="rate5" placeholder="rate out of 10" required>
+                                     <input type="text" name="tskill6" placeholder="ex. Python" required>
+                                     <input type="number" name="rate6" placeholder="rate out of 10" required>
+                                      
+                                    
+                                
+                                
+                                </div> 
+                                  <div class="temp4 test">
+                          
+                                 <h1 class="heading">Work Experience</h1>
+                            
+                                            <input type="text" name="emp_name"     placeholder="Employer/Company">
+                                            <input type="text" name="designation" placeholder="Designation">
+                                            <input type="text" name="location"  placeholder="Workplace">
+                                            <input type="text" name="project1"      placeholder="project name" >
+                                            <input type="text" name="project1_desc"      placeholder="about project" >
+                                            <input type="text" name="project2"      placeholder="project name" >
+                                            <input type="text" name="project2_desc"      placeholder="about project" >
+                                            <input type="text" name="from" placeholder="joined year">
+                                            <input type="text" name="to" placeholder="resignation year">
+                                            
+                                            
+<!--                                            <input type="text" name="to"        placeholder="To" onfocus="(this.type='date')">-->
+
+                                 
+                                </div>   
+
+                                
+                              
+                                <div class="temp7 test">    
+                                
+                                    <h1 class="headimg ">Interests</h1>
+                                   
+                                    <input type="text" name="hobby1" placeholder="What you like do do in free time ???">
+                                    <input type="text"name="hobby2"  placeholder="ex. Listning to music">
+                                    <input type="text"name="hobby3"  placeholder="ex. Reading magzines">
+                                     
+                                   
+                                </div>
+                                
+                                <div class="temp8 test">
+                                    
+                                    <h1 class="heading">Professional skills</h1> 
+                                       
+                                           <input type="text" name="pskill1" placeholder="ex. leadership skills">
+                                           <input type="text" name="pskill2" placeholder="ex. fast learner">
+                                           <input type="text" name="pskill3" placeholder="ex. cultured behaviour"> 
+                                          
+                                             
+                                     
+                        </div>  
+                                <div class="submit"><input  type="submit" name="save" value="save all"></div>
+                               
+                           </form>
+                                     
+                         </div> 
+                          
+                          
+        
+                
+                    
+        </div>   
+            
+        
+        
+        
+    </body>
+
+</html>

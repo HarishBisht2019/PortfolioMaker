@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing : border-box;
+    list-style:none;
+    text-decoration:none;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+body
+{
+    height: 220vh;
+    background-image: linear-gradient(to bottom,#777,#fff);
+}
+
+.wrapper
+{
+    position:relative;
+    width:85%;
+    
+}
+
+.wrapper .sidebar
+{
+    position:fixed;
+    width:200px;
+    height:100%;
+    background:transparent;
+    padding:30px 0;
+
+}
+
+.wrapper .sidebar h2
+{
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom:30px;
+    
+}
+
+.wrapper .sidebar ul li
+{
+    padding:15px;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom:1px solid rgba(0,0,0,0.05);
+    border-top:1px solid rgba(225,225,225,0.05);
+}
+
+.wrapper .sidebar ul li a
+{
+    color:#fff;
+    display:block;
+}
+
+.wrapper .sidebar ul li  :hover
+{
+    background:#594f8d;
+}
+
+wrapper .sidebar ul li : hover a
+{
+    color:#fff;
+}
+
+.wrapper .main_content .form
+{  
+    position: relative;
+    left: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.wrapper .main_content .form .test
+{
+    
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 45%;
+    width: 95%;
+    display: block;
+    margin: 0 20px 20px 0;
+    padding: 20px 50px;
+    
+}
+.wrapper .main_content .form .submit{
+    position: absolute;
+    bottom: -20px;
+    
+}
+.wrapper .main_content .temp2 
+{
+    
+    
+    display:table;
+     border-radius: 15px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(156,39,176,.2)),to(#fff));
+    background: linear-gradient(rgba(156,39,176,.5),#fff);
+}
+.wrapper .main_content .temp3 
+{   position:sticky;
+    border-radius: 15px;
+    display:table;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(255, 195, 0,.8)),to(#fff));
+    background: linear-gradient(rgba(255, 195, 0,.8),#fff);
+}
+.wrapper .main_content .temp4
+{
+
+    display:table;
+    border-radius: 15px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(199, 0, 57,.6)),to(#fff));
+    background: linear-gradient(rgba(199, 0, 57,.6),#fff);
+}
+.wrapper .main_content .temp5 
+{
+    display:table;
+    border-radius: 15px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(88, 24, 69,.8)),to(#fff));
+    background: linear-gradient(rgba(88, 24, 69,.8),#fff);
+}
+.wrapper .main_content .temp6 
+{
+    display:table;
+    border-radius: 15px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(156,39,176,.8)),to(#fff));
+    background: linear-gradient(rgba(156,39,176,.8),#fff);
+}
+.wrapper .main_content .temp7
+{
+    display:table;
+    border-radius: 15px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(230, 126, 34,.8)),to(#fff));
+    background: linear-gradient(rgba(230, 126, 34,.8),#fff);
+}
+.wrapper .main_content .temp8 
+{
+    display:table;
+    border-radius: 15px;
+    background: -webkit-gradient(linear,left top,left bottom,from(rgba(255, 87, 51,.9)),to(#fff));
+    background: linear-gradient(rgba(255, 87, 51,.9),#fff);
+}
+
+
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper .main_content .temp2 .page-two
+{
+    display:table-cell;
+    vertical-align:middle;
+    
+}
+
+input[type="text"],input[type="number"],select,textarea
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+label,input["file"]{ padding: 12px; margin-bottom: 10px;}
+
+input[type="submit"]
+{
+    border-radius: 5px;
+	padding: 10px 20px;
+	background: #f7be16;
+	color: #fff;
+	font-weight: 600;
+    
+}
+
+input[type="submit"]:hover{
+    background: #00818a;
+	cursor: pointer;
+}
+
